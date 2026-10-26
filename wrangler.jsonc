@@ -3,6 +3,13 @@
   // Update feeds live at /<appname>/appcast.xml as plain files; never add redirects or routes over them.
   "name": "blockstarsoftware",
   "compatibility_date": "2026-10-25",
+  // The real domain is the only address; keep the temporary ones off.
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "blockstarsoftware.com", "custom_domain": true },
+    { "pattern": "www.blockstarsoftware.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": ".",
     "not_found_handling": "404-page"
