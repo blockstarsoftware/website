@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EasyClip · Blockstar Software</title>
+  <meta name="description" content="A Mac app for cutting a millisecond-accurate clip out of a video without changing the video, or joining several clips into a highlight reel.">
+  <link rel="icon" href="../../assets/brand/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#132030">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../" aria-label="Blockstar Software home">
+        <picture>
+          <source srcset="../../assets/brand/logo-compact-cream.svg" media="(prefers-color-scheme: dark)">
+          <img src="../../assets/brand/logo-compact-navy.svg" alt="Blockstar Software" width="197" height="40">
+        </picture>
+      </a>
+      <nav class="nav">
+        <a href="../" aria-current="page">Projects</a>
+        <a href="../../about/">About</a>
+        <a href="../../donate/">Donate</a>
+        <a href="https://github.com/blockstarsoftware">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="product">
+      <img class="icon" src="../../assets/projects/easyclip-512.png" alt="EasyClip icon" width="160" height="160">
+      <div>
+        <p class="eyebrow">Mac app</p>
+        <h1>EasyClip</h1>
+        <p class="lede">Cut exactly the part of a video you want, to the millisecond, without changing the video. Or join several clips into a highlight reel.</p>
+        <div class="buttons">
+          <a class="button" href="https://github.com/blockstarsoftware/EasyClip/releases/latest">Download</a>
+          <a class="button secondary" href="https://github.com/blockstarsoftware/EasyClip">Source</a>
+        </div>
+        <p class="meta">In development · Requires macOS 14 Sonoma or later and ffmpeg · Free, MIT License</p>
+      </div>
+    </section>
+
+    <section class="prose">
+      <p>Drop a video on EasyClip, set the start and end, and export. The video isn't re-encoded, so the clip looks exactly like the original.</p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>Trim points accurate to the millisecond, typed as <code>HH:MM:SS:MS</code> or set by dragging.</li>
+        <li>A transcript of the video, made with MacWhisper, that you can search. Select a phrase and EasyClip suggests a clip from its words.</li>
+        <li>Highlight reels: several named clips from one video, in any order, with optional text cards and fades, exported as one file.</li>
+        <li>Audio normalization, on by default, and an optional extra version small enough to send in Signal.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

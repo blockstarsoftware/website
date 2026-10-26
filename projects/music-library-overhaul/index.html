@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Library Overhaul · Blockstar Software</title>
+  <meta name="description" content="A skill for Claude Code and Codex that overhauls a decades-old music library into a lossless, high-quality collection you care about.">
+  <link rel="icon" href="../../assets/brand/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#132030">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../" aria-label="Blockstar Software home">
+        <picture>
+          <source srcset="../../assets/brand/logo-compact-cream.svg" media="(prefers-color-scheme: dark)">
+          <img src="../../assets/brand/logo-compact-navy.svg" alt="Blockstar Software" width="197" height="40">
+        </picture>
+      </a>
+      <nav class="nav">
+        <a href="../" aria-current="page">Projects</a>
+        <a href="../../about/">About</a>
+        <a href="../../donate/">Donate</a>
+        <a href="https://github.com/blockstarsoftware">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="product">
+      <img class="icon" src="../../assets/projects/music-library-overhaul-512.png" alt="Music Library Overhaul icon" width="160" height="160">
+      <div>
+        <p class="eyebrow">Skill for Claude Code and Codex</p>
+        <h1>Music Library Overhaul</h1>
+        <p class="lede">Overhaul a decades-old music library, safely. Narrow it down to a lossless collection of music you actually care about.</p>
+        <div class="buttons">
+          <a class="button" href="https://github.com/blockstarsoftware/music-library-overhaul/releases/latest">Download</a>
+          <a class="button secondary" href="https://github.com/blockstarsoftware/music-library-overhaul">Source</a>
+          <a class="button secondary" href="https://github.com/blockstarsoftware/music-library-overhaul/blob/main/HOW-IT-WORKS.md">How it works</a>
+        </div>
+        <p class="meta">Version 1.0.1 · Free, MIT License · Needs ffmpeg and Python 3.9 or later</p>
+      </div>
+    </section>
+
+    <section class="prose">
+      <p>Over the years you rip CDs, grab downloads and collect music from all kinds of sources. Much of it seemed worth keeping at the time. Music Library Overhaul is a skill your coding agent follows to work through the whole library with you, one phase at a time, explaining each step before it happens.</p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>Finds damaged files: tracks cut short by an interrupted copy, files that won't open, and "lossless" albums secretly hiding lossy tracks.</li>
+        <li>Sorts out duplicates while keeping remasters, live takes and other real versions apart.</li>
+        <li>Fixes tags: artists split by spelling, live shows named by date, venue and source, and blank "Unknown Artist" files.</li>
+        <li>Separates spoken word and music videos from the music.</li>
+        <li>Helps you decide, artist by artist, what to keep locally, what to move to Spotify playlists, and what to let go.</li>
+        <li>Converts WAV and AIFF to ALAC or FLAC, proving the audio came through identical.</li>
+      </ul>
+      <p>Every change is previewed first, and everything removed goes to a trash folder you can restore from.</p>
+
+      <h2>Install</h2>
+      <p>Claude Code:</p>
+      <pre><code>git clone https://github.com/blockstarsoftware/music-library-overhaul.git ~/.claude/skills/music-library-overhaul</code></pre>
+      <p>Codex:</p>
+      <pre><code>git clone https://github.com/blockstarsoftware/music-library-overhaul.git ~/.agents/skills/music-library-overhaul</code></pre>
+      <p>Then ask your agent to help you overhaul your music library. Back up first and work on a copy.</p>
+    </section>
+  </main>
+</body>
+</html>
