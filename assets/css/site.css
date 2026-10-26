@@ -385,3 +385,5 @@ main{padding-bottom:56px}
   .bp-shot{max-width:300px}
   .features dl div{grid-template-columns:1fr;gap:6px}
 }
+.features-intro{margin-bottom:28px}
+.features-intro p{max-width:40em}
