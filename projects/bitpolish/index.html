@@ -44,7 +44,7 @@
       <div>
         <p class="eyebrow">Mac app</p>
         <h1>BitPolish</h1>
-        <p class="lede">Bit-perfect playback for Apple Music and your local library. Keep the app you already use. BitPolish adds the one thing it cannot do: it sets your DAC to each track's sample rate, locks the bit depth, and puts everything back when you are done.</p>
+        <p class="lede">Bit-perfect playback for Apple Music and your local library. Keep using Apple Music. BitPolish adds the one thing it cannot do: it sets your DAC to each track's sample rate, locks the bit depth, and puts everything back when you are done.</p>
         <div class="buttons">
           <a class="button" href="https://github.com/blockstarsoftware/BitPolish/releases/latest">Download</a>
           <a class="button secondary" href="https://github.com/blockstarsoftware/BitPolish">Source</a>
@@ -58,12 +58,11 @@
         <h2>For Apple Music listeners with great hi-fi gear</h2>
         <p>You own your music: high-resolution files, 96 kHz, 192 kHz. You play them in Apple Music: your library, your playlists, one app. And you have great headphones or speakers, a great DAC and amp, a system built to deliver all the detail the recording has.</p>
         <p>There is only one problem. Apple Music does not offer bit-perfect playback of local high-resolution files. macOS runs your sound output at one standard setting, often 44.1 or 48 kHz at 16-bit, and that setting does not change when you play local music in Apple Music. macOS has no way to automatically switch to the higher rate and bit depth a track needs. So your 96 kHz and 192 kHz files, most of them 24-bit, are converted down to 16-bit and the standard rate before they reach your DAC, and the detail in your files never makes it there.</p>
-        <p>Fortunately, there is BitPolish. You keep the app you already use, and the music reaches your hardware the way the file was made, at its sample rate and its bit depth.</p>
-        <p>The panel shows what is happening in plain terms: the rate going to the DAC, the file it came from, and a clear orange <em>Resampled</em> when something in the chain cannot carry a track as it is.</p>
+        <p>Fortunately, there is BitPolish. You keep using Apple Music on your local files, and the music reaches your hardware the way the file was made, at its sample rate and its bit depth.</p>
       </div>
       <figure class="bp-shot">
         <img src="../../assets/bitpolish/panel-dark.png" alt="The BitPolish panel with an orange Resampled label, the rate going to the DAC, the source file, a locked bit depth, the Manually Prime DAC buttons and the output list" width="400" height="948">
-        <figcaption>The panel, here showing a 44.1 kHz file reaching a DAC that is set to 48 kHz, so BitPolish says Resampled.</figcaption>
+        <figcaption>The panel, here showing a 44.1 kHz file reaching a DAC that is set to 48 kHz. BitPolish says Resampled in orange whenever something in the chain cannot carry a track as it is.</figcaption>
       </figure>
     </section>
 
@@ -71,14 +70,12 @@
       <h2>What exactly does BitPolish do?</h2>
       <div class="prose features-intro">
         <p>Switch on Bit-Perfect Listening, press play in Music, and BitPolish gets to work. It has two modes.</p>
-        <p><strong>Automatic.</strong> BitPolish changes your DAC's sample rate on the fly. As each track starts, it sets the DAC to that track's rate, whatever the file is and your DAC supports, and locks the bit depth at 24-bit by default, so 24-bit tracks stay 24-bit. A DAC that goes higher can be set to its maximum. Nothing is resampled on the way, so the samples reaching your DAC are the samples in the file.</p>
-        <p><strong>Manual.</strong> Changing sample rate takes the DAC a moment, about a second on some hardware, so in automatic mode a track at a new rate begins after a short gap. If you know what plays next, <strong>Manually Prime DAC</strong> removes it: pause, pick the track's rate, press play, and the DAC switches while nothing is playing.</p>
+        <p><strong>Automatic.</strong> BitPolish changes your DAC's sample rate on the fly. As each track starts, it sets the DAC to that track's rate, whatever the file is and your DAC supports, for Apple Lossless, AAC and MP3, and locks the bit depth at 24-bit by default, so 24-bit tracks stay 24-bit. A DAC that goes higher can be set to its maximum. Nothing is resampled on the way, so the samples reaching your DAC are the samples in the file.</p>
+        <p><strong>Manual.</strong> Changing sample rate takes the DAC a moment, about a second on some hardware, so in automatic mode a track at a new rate begins after a short gap. If you know what plays next, <strong>Manually Prime DAC</strong> removes it. It is a row of rate buttons in BitPolish's panel: pause Music, click the rate of the track you are about to play (Get Info in Music shows each file's rate), then press play. The DAC switches while nothing is playing, so the track starts clean. You never have to use it. It is there for the tracks where the gap would bother you.</p>
         <p>Switch it off, and everything goes back the way it was.</p>
       </div>
+      <p class="features-more">And the details that make it trustworthy:</p>
       <dl>
-        <div><dt>Follows each track</dt><dd>Sets the DAC to the rate of whatever Apple Music is playing, for Apple Lossless, AAC and MP3.</dd></div>
-        <div><dt>Locks the bit depth</dt><dd>24-bit by default, the most optical and coax can carry. A DAC that takes more over USB can be set to its maximum.</dd></div>
-        <div><dt>Manually Prime DAC</dt><dd>Switching rates takes the DAC a moment, and you hear a short gap before a track at a new rate begins. Priming removes it. Pause, choose the next track's rate, press play: the DAC switches while nothing is playing, so the track starts clean.</dd></div>
         <div><dt>Tells you the truth</dt><dd>An asterisk beside the rate in the menu bar means playback is not bit-perfect right now, because the volume is below 100% or your DAC refuses the rate. Rates your DAC will not take are faded.</dd></div>
         <div><dt>Restores everything</dt><dd>Before it touches your DAC, BitPolish saves its format. Switch off, quit, relaunch after a crash or replug the DAC, and it goes back exactly as it was. BitPolish never changes volume.</dd></div>
         <div><dt>Never surprises your speakers</dt><dd>If BitPolish moved your sound to the DAC, it stays there until you click Return, so nothing suddenly plays out loud.</dd></div>
@@ -90,9 +87,7 @@
     <section class="prose bp-philosophy">
       <h2>Built for listening sessions</h2>
       <p>You sit down with your music, switch BitPolish on, listen, and switch it off when you are done. Everything in the app follows from that.</p>
-      <p>Think of it like a drive. BitPolish keeps the car in gear the whole way. When the next track needs a different sample rate, it shifts for you, like an automatic transmission. Shifting takes the DAC a moment, so you hear a short gap before that track begins.</p>
-      <p><strong>Manually Prime DAC</strong> is how you shift ahead of time. It is a row of rate buttons in BitPolish's panel. Between tracks, pause Music, click the sample rate of the track you are about to play, then press play. (Get Info in Music shows each file's rate.) The DAC changes gear while nothing is playing, so the track starts with no gap. You never have to use it. It is there for the tracks where the gap would bother you.</p>
-      <p>When you pause, the car stays in gear, so pressing play picks up where you left off. When the session ends, BitPolish steps aside.</p>
+      <p>While it is on, it follows the music. Pause, and the DAC holds the last track's rate, so pressing play picks up right where you left off. When you switch it off, BitPolish steps aside and your DAC goes back to how it was.</p>
       <ul>
         <li><strong>Asks for nothing.</strong> No permission prompts of any kind: no AppleScript, Accessibility, audio recording or Media Library access. It reads Music's own log, its track-change notifications and the system's open-file table.</li>
         <li><strong>Hands off when off.</strong> While it is off, it reads and changes nothing.</li>
@@ -125,7 +120,7 @@
         <li>An administrator account, to follow rates. On a standard account the bit-depth lock still works, and BitPolish says so.</li>
         <li>Apple Music only. Audirvana and Roon are great players that manage the DAC themselves. If you are happy in one of them, you do not need BitPolish.</li>
         <li>Apple Music shares the output, so other apps' sounds mix in. Close other audio sources while you listen.</li>
-        <li>Changing rate takes the DAC about a second on some hardware, so a track at a new rate begins after a short gap, and its first instant can be resampled. Manually Prime DAC avoids both.</li>
+        <li>In automatic mode, a track at a new rate begins after a short gap, and its first instant can be resampled. Manual mode avoids both.</li>
         <li>AIFF and WAV files are not detected yet.</li>
       </ul>
 
