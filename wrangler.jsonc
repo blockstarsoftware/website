@@ -1,0 +1,10 @@
+{
+  // Static site: plain files served by Cloudflare, no Worker code.
+  // Update feeds live at /<appname>/appcast.xml as plain files; never add redirects or routes over them.
+  "name": "blockstarsoftware",
+  "compatibility_date": "2026-10-25",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
