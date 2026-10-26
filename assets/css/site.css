@@ -366,3 +366,22 @@ main{padding-bottom:56px}
 }
 .photo.storefront figcaption{font-size:10px;margin-top:8px;opacity:.85}
 .site-footer{margin-top:0}
+
+/* BitPolish page */
+.bp-split{display:grid;grid-template-columns:1fr 330px;gap:56px;align-items:start;padding:24px 0 8px}
+.bp-split .prose h2{margin-top:0}
+.bp-split .prose em{font-style:normal;color:var(--amber);font-family:var(--mono);font-size:.9em}
+.bp-shot{margin:0}
+.bp-shot img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:var(--shadow)}
+.bp-shot figcaption{font:11px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.features{padding:56px 0 8px}
+.features h2{margin:0 0 .6em}
+.features dl{margin:0;border-bottom:1px solid var(--line)}
+.features dl div{display:grid;grid-template-columns:260px 1fr;gap:32px;padding:20px 0;border-top:1px solid var(--line);align-items:baseline}
+.features dt{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 72;letter-spacing:-0.02em;font-size:1.45rem;line-height:1.15}
+.features dd{margin:0;color:var(--muted);font-size:16px;max-width:38em}
+@media (max-width:760px){
+  .bp-split{grid-template-columns:1fr;gap:28px}
+  .bp-shot{max-width:300px}
+  .features dl div{grid-template-columns:1fr;gap:6px}
+}
