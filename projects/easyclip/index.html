@@ -1,74 +1,114 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EasyClip · Blockstar Software</title>
-  <meta name="description" content="A Mac app for cutting a millisecond-accurate clip out of a video without changing the video, or joining several clips into a highlight reel.">
-  <link rel="canonical" href="https://blockstarsoftware.com/projects/easyclip/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Blockstar Software">
-  <meta property="og:title" content="EasyClip · Blockstar Software">
-  <meta property="og:description" content="A Mac app for cutting a millisecond-accurate clip out of a video without changing the video, or joining several clips into a highlight reel.">
-  <meta property="og:url" content="https://blockstarsoftware.com/projects/easyclip/">
-  <meta property="og:image" content="https://blockstarsoftware.com/assets/social/card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Blockstar Software. Born from necessity. Built for the Mac. Free for everyone.">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../../assets/brand/favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#132030">
-  <link rel="stylesheet" href="../../assets/css/site.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EasyClip · Blockstar Software</title>
+<meta name="description" content="Cut exactly the part of a video you want, to the millisecond, without changing the video. Free and open source.">
+<link rel="canonical" href="https://blockstarsoftware.com/projects/easyclip/">
+<meta property="og:url" content="https://blockstarsoftware.com/projects/easyclip/">
+<meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blockstar Software">
+<meta property="og:title" content="EasyClip · Blockstar Software">
+<meta property="og:description" content="Cut exactly the part of a video you want, to the millisecond, without changing the video. Free and open source.">
+<meta property="og:image" content="https://blockstarsoftware.com/assets/social/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blockstar Software. Born from necessity. Built for the Mac. Free for everyone.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/brand/favicon.svg?v=1" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css?v=1">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../../" aria-label="Blockstar Software home">
-        <picture>
-          <source srcset="../../assets/brand/logo-compact-cream.svg" media="(prefers-color-scheme: dark)">
-          <img src="../../assets/brand/logo-compact-navy.svg" alt="Blockstar Software" width="197" height="40">
-        </picture>
-      </a>
-      <nav class="nav">
-        <a href="../" aria-current="page">Projects</a>
-        <a href="../../about/">About</a>
-        <a href="../../donate/">Donate</a>
-        <a href="https://github.com/blockstarsoftware">GitHub</a>
-      </nav>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="../../" aria-label="Blockstar Software, home"><picture><source srcset="../../assets/brand/logo-compact-navy.svg?v=1" media="(prefers-color-scheme: light)"><img src="../../assets/brand/logo-compact-cream.svg?v=1" alt="Blockstar Software" width="157" height="32"></picture></a>
+  <ul class="nav-links"><li><a href="../../projects/" aria-current="page">Projects</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li><li><a href="https://github.com/blockstarsoftware">GitHub</a></li></ul>
+  
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="menu-panel" id="menu" aria-hidden="true"><ul><li style="--i:0"><a href="../../projects/" aria-current="page">Projects</a></li><li style="--i:1"><a href="../../about/">About</a></li><li style="--i:2"><a href="../../donate/">Donate</a></li><li style="--i:3"><a href="https://github.com/blockstarsoftware">GitHub</a></li></ul></div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <a class="back text-sm" href="../../projects/"><i class="ph ph-arrow-left" aria-hidden="true"></i>Projects</a>
+      <div class="product-tag"><img src="../../assets/projects/easyclip-512.png" alt="" width="48" height="48"><div><b>EasyClip</b><span class="text-sm muted">Native SwiftUI app</span></div></div>
+      <h1 class="text-5xl grad">Cut exactly the part <br>of a video you want, <br>to the millisecond, <br>without changing the video.</h1>
+      <p class="sub text-xl">Or join several clips into a highlight reel.</p>
+      <div class="hero-cta"><span class="btn btn-primary" aria-disabled="true" title="In development"><i class="ph ph-download-simple" aria-hidden="true"></i>Download</span></div>
+      <p class="meta text-sm">In development · Requires macOS 14 Sonoma or later and ffmpeg · Free</p>
     </div>
-  </header>
+    <div class="card icon-art hero-art"><img src="../../assets/projects/easyclip-512.png" alt="EasyClip icon" width="256" height="256"></div>
+  </div>
+</section>
 
-  <main class="wrap">
-    <section class="product">
-      <img class="icon" src="../../assets/projects/easyclip-512.png" alt="EasyClip icon" width="160" height="160">
-      <div>
-        <p class="eyebrow">Mac app</p>
-        <h1>EasyClip</h1>
-        <p class="lede">Cut exactly the part of a video you want, to the millisecond, without changing the video. Or join several clips into a highlight reel.</p>
-        <div class="buttons">
-          <a class="button" href="https://github.com/blockstarsoftware/EasyClip/releases/latest">Download</a>
-          <a class="button secondary" href="https://github.com/blockstarsoftware/EasyClip">Source</a>
-        </div>
-        <p class="meta">In development · Requires macOS 14 Sonoma or later and ffmpeg · Free, MIT License</p>
-      </div>
-    </section>
+<section class="section deep reveal" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow text-sm">How it works</p>
+      <!-- NEW COPY: heading -->
+      <h2 id="how-h" class="text-4xl h2-xl">Drop, set, export</h2>
+    </div>
+    <div class="steps">
+      <article class="card roomy step"><p class="n text-sm">1</p><h3 class="text-xl">Drop a video on EasyClip</h3></article>
+      <article class="card roomy step"><p class="n text-sm">2</p><h3 class="text-xl">Set the start and end</h3></article>
+      <article class="card roomy step"><p class="n text-sm">3</p><h3 class="text-xl">Export</h3></article>
+    </div>
+  </div>
+</section>
 
-    <section class="prose">
-      <p>Drop a video on EasyClip, set the start and end, and export. The video isn't re-encoded, so the clip looks exactly like the original.</p>
+<section class="tagline-section" aria-label="What EasyClip promises">
+  <div class="wrap">
+    <p class="tagline "><span class="line">The video isn't re-encoded,</span><span class="line">so the clip looks exactly</span><span class="line">like the original.</span></p>
+  </div>
+</section>
 
-      <h2>What it does</h2>
-      <ul>
-        <li>Trim points accurate to the millisecond, typed as <code>HH:MM:SS:MS</code> or set by dragging.</li>
-        <li>A transcript of the video, made with MacWhisper, that you can search. Select a phrase and EasyClip suggests a clip from its words.</li>
-        <li>Highlight reels: several named clips from one video, in any order, with optional text cards and fades, exported as one file.</li>
-        <li>Audio normalization, on by default, and an optional extra version small enough to send in Signal.</li>
+<section class="section reveal" id="what" aria-labelledby="what-h">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow text-sm">Features</p>
+      <h2 id="what-h" class="text-4xl h2-xl">What it does</h2>
+    </div>
+    <div class="grid-2">
+      <article class="card roomy benefit"><i class="ph ph-timer" aria-hidden="true"></i><p>Trim points accurate to the millisecond, typed as <code>HH:MM:SS:MS</code> or set by dragging.</p></article>
+      <article class="card roomy benefit"><i class="ph ph-text-align-left" aria-hidden="true"></i><p>A transcript of the video, made with MacWhisper, that you can search. Select a phrase and EasyClip suggests a clip from its words.</p></article>
+      <article class="card roomy benefit"><i class="ph ph-film-strip" aria-hidden="true"></i><p>Highlight reels: several named clips from one video, in any order, with optional text cards and fades, exported as one file.</p></article>
+      <article class="card roomy benefit"><i class="ph ph-speaker-simple-high" aria-hidden="true"></i><p>Audio normalization, on by default, and an optional extra version small enough to send in Signal.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section final deep reveal" aria-labelledby="final-h">
+  <div class="wrap">
+    <img class="final-icon" src="../../assets/projects/easyclip-512.png" alt="" width="96" height="96">
+    <h2 id="final-h" class="text-4xl h2-xl">EasyClip</h2>
+    <p class="text-lg">Cut exactly the part of a video you want, to the millisecond, without changing the video. Or join several clips into a highlight reel.</p>
+    <div class="final-cta"><span class="btn btn-primary" aria-disabled="true" title="In development"><i class="ph ph-download-simple" aria-hidden="true"></i>Download</span></div>
+    <p class="text-sm">In development · Requires macOS 14 Sonoma or later and ffmpeg · Free</p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="../../" aria-label="Blockstar Software, home"><picture><source srcset="../../assets/brand/logo-compact-navy.svg?v=1" media="(prefers-color-scheme: light)"><img src="../../assets/brand/logo-compact-cream.svg?v=1" alt="Blockstar Software" width="157" height="32"></picture></a>
+      <ul class="text-sm">
+        <li><a href="../../projects/">Projects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../donate/">Donate</a></li>
+        <li><a href="mailto:hello@blockstarsoftware.com">Contact</a></li>
       </ul>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>© 2026 Eli Block</span>
     </div>
-  </footer>
+    <p class="copy text-sm">© 2026 Eli Block</p>
+  </div>
+</footer>
+<script src="../../assets/js/site.js?v=1"></script>
 </body>
 </html>

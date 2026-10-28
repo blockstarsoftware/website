@@ -1,87 +1,78 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blockstar Software</title>
-  <meta name="description" content="Mac software born from necessity, free and open source.">
-  <link rel="canonical" href="https://blockstarsoftware.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Blockstar Software">
-  <meta property="og:title" content="Blockstar Software">
-  <meta property="og:description" content="Mac software born from necessity, free and open source.">
-  <meta property="og:url" content="https://blockstarsoftware.com/">
-  <meta property="og:image" content="https://blockstarsoftware.com/assets/social/card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Blockstar Software. Born from necessity. Built for the Mac. Free for everyone.">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#132030">
-  <link rel="stylesheet" href="assets/css/site.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blockstar Software</title>
+<meta name="description" content="Born from necessity. Built for the Mac. Free for everyone. Mac apps and agent skills, free and open source.">
+<link rel="canonical" href="https://blockstarsoftware.com/">
+<meta property="og:url" content="https://blockstarsoftware.com/">
+<meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blockstar Software">
+<meta property="og:title" content="Blockstar Software">
+<meta property="og:description" content="Born from necessity. Built for the Mac. Free for everyone. Mac apps and agent skills, free and open source.">
+<meta property="og:image" content="https://blockstarsoftware.com/assets/social/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blockstar Software. Born from necessity. Built for the Mac. Free for everyone.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/brand/favicon.svg?v=1" type="image/svg+xml">
+<link rel="preload" href="./assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/css/site.css?v=1">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="./" aria-label="Blockstar Software home">
-        <picture>
-          <source srcset="assets/brand/logo-compact-cream.svg" media="(prefers-color-scheme: dark)">
-          <img src="assets/brand/logo-compact-navy.svg" alt="Blockstar Software" width="197" height="40">
-        </picture>
-      </a>
-      <nav class="nav">
-        <a href="projects/">Projects</a>
-        <a href="about/">About</a>
-        <a href="donate/">Donate</a>
-        <a href="https://github.com/blockstarsoftware">GitHub</a>
-      </nav>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="./" aria-label="Blockstar Software, home" aria-current="page"><picture><source srcset="./assets/brand/logo-compact-navy.svg?v=1" media="(prefers-color-scheme: light)"><img src="./assets/brand/logo-compact-cream.svg?v=1" alt="Blockstar Software" width="157" height="32"></picture></a>
+  <ul class="nav-links"><li><a href="./projects/">Projects</a></li><li><a href="./about/">About</a></li><li><a href="./donate/">Donate</a></li><li><a href="https://github.com/blockstarsoftware">GitHub</a></li></ul>
+  
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="menu-panel" id="menu" aria-hidden="true"><ul><li style="--i:0"><a href="./projects/">Projects</a></li><li style="--i:1"><a href="./about/">About</a></li><li style="--i:2"><a href="./donate/">Donate</a></li><li style="--i:3"><a href="https://github.com/blockstarsoftware">GitHub</a></li></ul></div>
+</header>
+<main id="main">
+
+<section class="home-hero">
+  <div class="wrap">
+    <h1><picture><source srcset="./assets/brand/logo-primary-navy.svg?v=1" media="(prefers-color-scheme: light)"><img class="home-logo" src="./assets/brand/logo-primary-cream.svg?v=1" alt="Blockstar Software" width="745" height="201"></picture></h1>
+    <p class="home-tagline text-5xl"><span class="grad">Born from necessity.</span><span class="grad">Built for the Mac.</span><span class="amber">Free for everyone.</span></p>
+    <div class="home-cta">
+      <a class="btn btn-primary" href="#projects"><i class="ph ph-arrow-down" aria-hidden="true"></i>See the projects</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <h1 class="visually-hidden">Blockstar Software</h1>
-        <img src="assets/brand/logo-primary-cream.svg" alt="Blockstar Software" width="745" height="201">
-        <p class="tagline">Born from necessity.<br>Built for the Mac.<br><em>Free for everyone.</em></p>
-      </div>
-    </section>
+<section class="section deep reveal" id="projects" aria-labelledby="projects-h">
+  <div class="wrap">
+    <h2 id="projects-h" class="text-4xl h2-xl">Projects</h2>
+    <div class="bento"><a class="card proj proj-feature" href="./projects/bitpolish/"><div><img class="proj-icon" src="./assets/projects/bitpolish-512.png" alt="" width="144" height="144"><p class="kind text-sm">Native SwiftUI app</p><h3 class="text-3xl">BitPolish</h3><p class="line text-lg">A menu-bar switch for bit-perfect listening: your DAC follows each Apple Music track's sample rate.</p><div class="proj-foot"><span class="status soon text-xs">Coming soon</span><span class="arrow-link">See BitPolish<i class="ph ph-arrow-right" aria-hidden="true"></i></span></div></div><div class="feature-shot"><picture><source srcset="./assets/bitpolish/panel-light.png?v=1" media="(prefers-color-scheme: light)"><img src="./assets/bitpolish/panel-dark.png?v=1" alt="The BitPolish panel showing green Bit Perfect and 96 kHz to the DAC" width="320" height="491" loading="lazy"></picture></div></a><a class="card proj" href="./projects/easyclip/"><img class="proj-icon" src="./assets/projects/easyclip-512.png" alt="" width="144" height="144"><p class="kind text-sm">Native SwiftUI app</p><h3 class="text-2xl">EasyClip</h3><p class="line">Cut a clip out of a video to the millisecond without changing the video, or join several into a highlight reel.</p><div class="proj-foot"><span class="status dev text-xs">In development</span><span class="arrow-link">See EasyClip<i class="ph ph-arrow-right" aria-hidden="true"></i></span></div></a><a class="card proj" href="./projects/music-library-overhaul/"><img class="proj-icon" src="./assets/projects/music-library-overhaul-512.png" alt="" width="144" height="144"><p class="kind text-sm">Skill for Claude Code and Codex</p><h3 class="text-2xl">Music Library Overhaul</h3><p class="line">A skill for Claude Code and Codex that overhauls a decades-old music library into a lossless collection you care about.</p><div class="proj-foot"><span class="status live text-xs">Available</span><span class="arrow-link">See the skill<i class="ph ph-arrow-right" aria-hidden="true"></i></span></div></a></div>
+  </div>
+</section>
 
-    <div class="specs"><div>Native <b>SwiftUI</b> apps for <b>macOS 14+</b></div><div>Human vision, AI execution</div></div>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Projects</h2>
-        </div>
-        <div class="cards">
-          <a class="card" href="projects/music-library-overhaul/">
-            <img src="assets/projects/music-library-overhaul-512.png" alt="" width="72" height="72">
-            <h3>Music Library Overhaul</h3>
-            <p>A skill for Claude Code and Codex that overhauls a decades-old music library into a lossless collection you care about.</p>
-            <span class="tag live">Available</span>
-          </a>
-          <a class="card" href="projects/bitpolish/">
-            <img src="assets/projects/bitpolish-512.png" alt="" width="72" height="72">
-            <h3>BitPolish</h3>
-            <p>A menu-bar switch for bit-perfect listening: your DAC follows each Apple Music track's sample rate.</p>
-            <span class="tag">Coming soon</span>
-          </a>
-          <a class="card" href="projects/easyclip/">
-            <img src="assets/projects/easyclip-512.png" alt="" width="72" height="72">
-            <h3>EasyClip</h3>
-            <p>Cut a clip out of a video to the millisecond without changing the video, or join several into a highlight reel.</p>
-            <span class="tag">In development</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>© 2026 Eli Block</span>
+<section class="tagline-section" aria-label="How Blockstar software is made">
+  <div class="wrap">
+    <p class="tagline big"><span class="line">Human vision,</span><span class="line">AI execution.</span></p>
+    <p class="tagline-after"><a class="arrow-link" href="./about/">About Blockstar<i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="./" aria-label="Blockstar Software, home"><picture><source srcset="./assets/brand/logo-compact-navy.svg?v=1" media="(prefers-color-scheme: light)"><img src="./assets/brand/logo-compact-cream.svg?v=1" alt="Blockstar Software" width="157" height="32"></picture></a>
+      <ul class="text-sm">
+        <li><a href="./projects/">Projects</a></li>
+        <li><a href="./about/">About</a></li>
+        <li><a href="./donate/">Donate</a></li>
+        <li><a href="mailto:hello@blockstarsoftware.com">Contact</a></li>
+      </ul>
     </div>
-  </footer>
+    <p class="copy text-sm">© 2026 Eli Block</p>
+  </div>
+</footer>
+<script src="./assets/js/site.js?v=1"></script>
 </body>
 </html>
