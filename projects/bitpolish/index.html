@@ -61,8 +61,11 @@
         <p>Fortunately, there is BitPolish. You keep using Apple Music on your local files, and the music reaches your hardware the way the file was made, at its sample rate and its bit depth.</p>
       </div>
       <figure class="bp-shot">
-        <img src="../../assets/bitpolish/panel-dark.png" alt="The BitPolish panel with an orange Resampled label, the rate going to the DAC, the source file, a locked bit depth, the Manually Prime DAC buttons and the output list" width="400" height="948">
-        <figcaption>The panel, here showing a 44.1 kHz file reaching a DAC that is set to 48 kHz. BitPolish says Resampled in orange whenever something in the chain cannot carry a track as it is.</figcaption>
+        <picture>
+          <source srcset="../../assets/bitpolish/panel-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="../../assets/bitpolish/panel-light.png" alt="The BitPolish panel with Bit-Perfect Listening on: a green Bit Perfect status, 44.1 kHz going to the DAC, the source file and DAC format, the locked 24-bit depth, the Manually Prime DAC buttons and the output" width="320" height="491">
+        </picture>
+        <figcaption>The panel while a 44.1 kHz file plays: green Bit Perfect, 44.1 kHz to the DAC at 24-bit. When something in the chain cannot carry a track as it is, the status turns orange and says Resampled.</figcaption>
       </figure>
     </section>
 
