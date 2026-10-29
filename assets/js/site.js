@@ -85,18 +85,23 @@
     var BASE_RATE = 44.1, BASE_BITS = 16, LOCK = 24;
     var panelEl = demo.querySelector('.mp');
     var chipsEl = demo.querySelector('.chips');
+    // Counted once per visit in Umami: did the visitor try the simulator at all.
+    var tried = false;
+    function used() {
+      if (!tried && window.umami) { tried = true; window.umami.track('BitPolish simulator'); }
+    }
     tracks.forEach(function (t, i) {
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'chip';
       b.innerHTML = '<b>' + t.label + '</b><small>' + t.sub + '</small>';
-      b.addEventListener('click', function () { track = i; render(true); });
+      b.addEventListener('click', function () { used(); track = i; render(true); });
       chipsEl.appendChild(b);
     });
     demo.querySelectorAll('.seg').forEach(function (b) {
-      b.addEventListener('click', function () { mode = b.dataset.mode; render(true); });
+      b.addEventListener('click', function () { used(); mode = b.dataset.mode; render(true); });
     });
     panelEl.querySelector('[data-toggle]').addEventListener('click', function () {
-      mode = mode === 'with' ? 'without' : 'with'; render(true);
+      used(); mode = mode === 'with' ? 'without' : 'with'; render(true);
     });
     var numEl = panelEl.querySelector('[data-num]'), badgeEl = panelEl.querySelector('[data-badge]');
     var srcEl = panelEl.querySelector('[data-src]'), dacEl = panelEl.querySelector('[data-dac]');
