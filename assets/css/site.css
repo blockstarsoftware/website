@@ -9,6 +9,7 @@
   font-variant: normal; text-transform: none; line-height: 1; letter-spacing: 0;
   font-feature-settings: "liga"; font-variant-ligatures: discretionary-ligatures;
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.ph.ph-app-window:before { content: "\e5da"; }
 .ph.ph-arrow-counter-clockwise:before { content: "\e038"; }
 .ph.ph-arrow-down:before { content: "\e03e"; }
 .ph.ph-arrow-left:before { content: "\e058"; }
@@ -22,6 +23,7 @@
 .ph.ph-film-strip:before { content: "\e792"; }
 .ph.ph-first-aid-kit:before { content: "\e570"; }
 .ph.ph-flower-lotus:before { content: "\e6cc"; }
+.ph.ph-folder-open:before { content: "\e256"; }
 .ph.ph-fork-knife:before { content: "\e262"; }
 .ph.ph-github-logo:before { content: "\e576"; }
 .ph.ph-hand-palm:before { content: "\e57e"; }
@@ -36,10 +38,12 @@
 .ph.ph-plus:before { content: "\e3d4"; }
 .ph.ph-power:before { content: "\e3da"; }
 .ph.ph-speaker-simple-high:before { content: "\e450"; }
+.ph.ph-squares-four:before { content: "\e464"; }
 .ph.ph-tag:before { content: "\e478"; }
 .ph.ph-text-align-left:before { content: "\e484"; }
 .ph.ph-timer:before { content: "\e492"; }
 .ph.ph-toggle-right:before { content: "\e676"; }
+.ph.ph-tray:before { content: "\e4aa"; }
 .ph.ph-waveform:before { content: "\e802"; }
 
 /* Blockstar prototype, revision 3 (2026-10-28). Built to the landing-page-design skill, Part B.
@@ -199,6 +203,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .skeleton.loaded img { opacity: 1; }
 @keyframes pulse { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.6; } }
 .caption { margin-top: var(--s12); color: var(--muted); }
+.wide-shot { margin-top: var(--s48); }  /* a full-width app picture under a section's cards */
 
 /* Home hero: centered brand moment */
 .home-hero { padding: calc(var(--s96) + var(--s64)) 0 var(--s96); text-align: center; }
@@ -216,6 +221,8 @@ a.pill:hover { color: var(--text); background: var(--raised); }
 /* Project cards (home bento and Projects page) */
 .bento { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s16); margin-top: var(--s48); }
 .bento.three { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 0; }
+.bento.three.home { margin-top: var(--s48); }  /* home: BitPolish across the top, three cards under it */
+.bento.flush { margin-top: 0; }  /* Projects page: two by two */
 .proj { display: flex; flex-direction: column; padding: var(--s32); text-decoration: none; color: inherit; transition: background-color 300ms var(--ease), transform 500ms var(--ease); }
 .proj:hover { background: var(--raised); transform: translateY(-2px); }
 .proj:active { transform: scale(0.98); }

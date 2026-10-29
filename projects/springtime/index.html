@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Springtime · Blockstar Software</title>
+<meta name="description" content="If you love spring-loaded folders in Finder, you&#x27;ll love Springtime. One menu bar item reaches every Finder window on every Space. Free for the Mac.">
+<link rel="canonical" href="https://blockstarsoftware.com/projects/springtime/">
+<meta property="og:url" content="https://blockstarsoftware.com/projects/springtime/">
+<meta name="theme-color" content="#131209" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Blockstar Software">
+<meta property="og:title" content="Springtime · Blockstar Software">
+<meta property="og:description" content="If you love spring-loaded folders in Finder, you&#x27;ll love Springtime. One menu bar item reaches every Finder window on every Space. Free for the Mac.">
+<meta property="og:image" content="https://blockstarsoftware.com/assets/social/card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blockstar Software. Born from necessity. Built for the Mac. Free for everyone.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/brand/favicon.svg?v=5" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/site.css?v=5">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="79929862-577c-49e4-ac42-705e05d6199a" data-domains="blockstarsoftware.com,www.blockstarsoftware.com" data-performance="true" data-errors="true"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<nav class="nav" aria-label="Main">
+  <a class="brand" href="../../" aria-label="Blockstar Software, home"><picture><source srcset="../../assets/brand/logo-compact-navy.svg?v=5" media="(prefers-color-scheme: light)"><img src="../../assets/brand/logo-compact-cream.svg?v=5" alt="Blockstar Software" width="157" height="32"></picture></a>
+  <ul class="nav-links"><li><a href="../../projects/" aria-current="page">Projects</a></li><li><a href="../../about/">About</a></li><li><a href="../../donate/">Donate</a></li><li><a href="https://github.com/blockstarsoftware" data-umami-event="GitHub" data-umami-event-where="header">GitHub</a></li></ul>
+  
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span></button>
+</nav>
+<div class="menu-panel" id="menu" aria-hidden="true"><ul><li style="--i:0"><a href="../../projects/" aria-current="page">Projects</a></li><li style="--i:1"><a href="../../about/">About</a></li><li style="--i:2"><a href="../../donate/">Donate</a></li><li style="--i:3"><a href="https://github.com/blockstarsoftware" data-umami-event="GitHub" data-umami-event-where="menu">GitHub</a></li></ul></div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <a class="back text-sm" href="../../projects/"><i class="ph ph-arrow-left" aria-hidden="true"></i>Projects</a>
+      <div class="product-tag"><img src="../../assets/projects/springtime-512.png" alt="" width="48" height="48"><div><b>Springtime</b><span class="text-sm muted">Native Mac app</span></div></div>
+      <h1 class="text-5xl grad">If you love spring-loaded <br>folders in Finder, <br>you'll love Springtime.</h1>
+      <!-- NEW COPY: Eli's opening; Claude finished the list -->
+      <p class="sub text-xl">One menu bar item gives you immediate access to every Finder window on every Space, any folder from your home folder, the apps that can open your file, and a shelf to park it for later.</p>
+      <p class="meta text-sm">In development · Requires macOS 14 Sonoma or later · Free</p>
+    </div>
+    <div class="card icon-art hero-art"><img src="../../assets/projects/springtime-512.png" alt="Springtime icon" width="256" height="256"></div>
+  </div>
+</section>
+
+<section class="section deep reveal" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow text-sm">Why it exists</p>
+      <!-- NEW COPY: heading -->
+      <h2 id="why-h" class="text-4xl h2-xl">FB24754909</h2>
+    </div>
+    <div class="prose">
+      <p class="text-xl">For those who have the FB24754909 blues, or those who simply wanted a new tool.</p>
+      <!-- Reworded 2026-10-29 at Eli's request: how to reproduce each failure. Draft until he approves. -->
+      <p class="text-lg">While macOS 27 has brought its share of refreshing refinements, it has unfortunately introduced other regressions. Two of them broke things I do all day.</p>
+      <p class="text-lg"><b>Dragging to a Finder window on another Space.</b> Open a Finder window on one Space, then switch to another. From the new Space, drag a file onto Finder in the Dock and hold it there. You're presented with the presently open Finder windows, including the one from your first Space. If you drag your file there, macOS used to take you to that Finder window so you could drop the file in. Now it fails, leaving you where you are, and the drag has nowhere to go.</p>
+      <p class="text-lg"><b>Spring-loaded folders for files dragged out of apps.</b> With a Finder window open, drag a file out of another application, such as an attachment in Mail, and drag it over the Finder icon in the Dock. Again, you're presented with a display of open Finder windows, but it fails in the same way.</p>
+      <p class="text-lg">Stage Manager could have filled in, but it's too buggy. I reported it to Apple as FB24754909.</p>
+      <p class="text-lg">This is what prompted me to create this little utility, which on some level does the job better than a working Finder would have, but I'd prefer not to need it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow text-sm">How it works</p>
+      <!-- NEW COPY: heading -->
+      <h2 id="how-h" class="text-4xl h2-xl">Drag, rest, choose</h2>
+    </div>
+    <div class="steps">
+      <article class="card roomy step"><p class="n text-sm">1</p><h3 class="text-xl">Drag a file onto the leaf in the menu bar</h3></article>
+      <article class="card roomy step"><p class="n text-sm">2</p><h3 class="text-xl">Rest there a moment</h3></article>
+      <article class="card roomy step"><p class="n text-sm">3</p><h3 class="text-xl">Choose where the file goes</h3></article>
+    </div>
+    <!-- Pictures: the app's -demoSnapshot against a made-up home folder, so nothing of Eli's shows (2026-10-29). -->
+    <figure class="wide-shot">
+      <div class="card"><div class="inner skeleton"><picture><source srcset="../../assets/springtime/panel-light.png?v=5" media="(prefers-color-scheme: light)"><img src="../../assets/springtime/panel-dark.png?v=5" alt="The Springtime panel browsing from Home: columns for home, Documents, Travel and Lisbon 2026, the Park strip along the top, and Home, Windows and Apps down the left side" width="1187" height="484" loading="lazy"></picture></div></div>
+      <!-- NEW COPY: caption -->
+      <figcaption class="caption text-sm">The panel, browsing from Home into Documents, Travel and Lisbon 2026. Park runs along the top; Windows and Apps are down the left side.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section deep reveal" id="what" aria-labelledby="what-h">
+  <div class="wrap">
+    <div class="intro">
+      <p class="eyebrow text-sm">Features</p>
+      <h2 id="what-h" class="text-4xl h2-xl">Where it goes</h2>
+    </div>
+    <div class="grid-2">
+      <article class="card roomy benefit"><i class="ph ph-folder-open" aria-hidden="true"></i><h3 class="text-xl">Browse from Home</h3><p>Folders open in columns as you rest on them, so you can drill down as far as you like and drop.</p></article>
+      <article class="card roomy benefit"><i class="ph ph-app-window" aria-hidden="true"></i><h3 class="text-xl">Finder windows</h3><p>Every open Finder window, on every Space, with a picture of each. Rest on one and Springtime takes you to it, file still in hand. Or, if you'd rather stay put, it draws a live copy of the window right where you are.</p></article>
+      <article class="card roomy benefit"><i class="ph ph-squares-four" aria-hidden="true"></i><h3 class="text-xl">Apps</h3><p>The running apps that can open the file, with their windows. Drop to open it there, or carry it to the exact spot in a window.</p></article>
+      <article class="card roomy benefit"><i class="ph ph-tray" aria-hidden="true"></i><h3 class="text-xl">Park</h3><p>Set the file on a shelf and come back for it later.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="tagline-section" aria-label="How Springtime handles files">
+  <div class="wrap prose">
+    <p class="text-lg">It follows Finder's rules: a move on the same disk, a copy to another, Option to copy, Command to move. It asks before replacing a file with the same name, and Undo takes back your last drops. Attachments dragged out of Mail arrive as the real files.</p>
+  </div>
+</section>
+
+<section class="section final deep reveal" aria-labelledby="final-h">
+  <div class="wrap">
+    <img class="final-icon" src="../../assets/projects/springtime-512.png" alt="" width="96" height="96">
+    <h2 id="final-h" class="text-4xl h2-xl">Springtime</h2>
+    <p class="text-lg">If you love spring-loaded folders in Finder, you'll love Springtime.</p>
+    <p class="text-sm">In development · Requires macOS 14 Sonoma or later · Free</p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="../../" aria-label="Blockstar Software, home"><picture><source srcset="../../assets/brand/logo-compact-navy.svg?v=5" media="(prefers-color-scheme: light)"><img src="../../assets/brand/logo-compact-cream.svg?v=5" alt="Blockstar Software" width="157" height="32"></picture></a>
+      <ul class="text-sm">
+        <li><a href="../../projects/">Projects</a></li>
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../donate/">Donate</a></li>
+        <li><a href="mailto:hello@blockstarsoftware.com" data-umami-event="Email" data-umami-event-where="footer">Contact</a></li>
+      </ul>
+    </div>
+    <p class="copy text-sm">© 2026 Eli Block</p>
+  </div>
+</footer>
+<script src="../../assets/js/site.js?v=5"></script>
+</body>
+</html>
