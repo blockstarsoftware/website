@@ -226,6 +226,7 @@ a.pill:hover { color: var(--text); background: var(--raised); }
 .proj { display: flex; flex-direction: column; padding: var(--s32); text-decoration: none; color: inherit; transition: background-color 300ms var(--ease), transform 500ms var(--ease); }
 .proj:hover { background: var(--raised); transform: translateY(-2px); }
 .proj:active { transform: scale(0.98); }
+.proj.static:hover, .proj.static:active { background: var(--surface); transform: none; }  /* a card with nothing to open yet */
 .proj-icon { width: 144px; height: 144px; }
 .kind { margin-top: var(--s24); color: var(--muted); font-weight: 500; }
 .proj h3 { margin-top: var(--s4); }
